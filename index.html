@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Klawrz Dev Site</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Blinker&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	
+	
+	
+	<!-- Site wrapper  -->
+	<div id="wrapper">
+		
+		<!-- Header  -->
+		<div class="section">
+			<div id="header">
+				
+				<!-- Left column (site logo) -->
+				<div class="column-quarter-left">
+					<div id="logo-container">
+						<h1><a href="#Home">KLAWRZ</a></h1>
+					</div>
+				</div>
+				
+				<!-- Mid column (main nav) -->
+				<div class="column-half-mid">
+					<div id="navbar">
+						<ul id="nav-menu" class="main-menu">
+							<li><a class="current" href="#Home">Home</a></li>
+							<li><a href="#Shop">Catalog</a><img class="arrow" src="images/arrow.png" alt="dropdown" width="6px" height="12px" />
+								<ul class="submenu">
+									<li>
+										<a href="#">Men
+											<ul class="sub-submenu">
+												<li><a href="mens-shirts">Shirts</a></li>
+												<li><a href="mens-pants">Pants</a></li>
+												<li><a href="mens-shoes">Shoes</a></li>
+											</ul>
+										</a>
+									</li>
+									<li>
+										<a href="#">Women
+											<ul class="sub-submenu">
+												<li><a href="womens-shirts">Shirts</a></li>
+												<li><a href="womens-pants">Pants</a></li>
+												<li><a href="womens-shoes">Shoes</a></li>
+											</ul>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#About">About Us</a></li>
+							<li><a href="#Contact">Chat</a></li>
+							
+						</ul>
+					</div>
+				</div>
+				
+				<!-- Right column, (cart/search icons)  -->
+				<div class="column-quarter-right">
+					<div id="icon-container">
+						<div id="search" class="icon"><a href="#Search"><img src="images/magnifier.png" alt="search-icon" /></a></div>
+						<div id="cart" class="icon"><a href="#Cart"><img src="images/shopping-cart.png" alt="cart-icon" /></a></div>
+						<div id="burger-menu" class="icon"><a href="javascript:void(0);" class="burger" onClick="myFunction()"><img src="images/burger.png" alt="burger" /></a></div>
+					</div>
+				</div>
+				<script>
+					function myFunction(){
+						var x = document.getElementById('nav-menu');
+						if (x.className === "main-menu"){
+							x.className += " responsive";
+						} else {
+							x.className = "main-menu";
+						}
+					}
+				</script>
+				
+			</div>
+		</div>
+		
+		<!-- Hero Image  -->
+		<div>
+			<div id="hero-image"></div>
+		</div>
+		
+		
+		<!-- Featured Collection  -->
+		<!-- 
+		<div class="section">
+			<div id="featured-collection">
+				<h2>Featured Collection</h2>
+				<div class="grid-container">
+					<div class="grid-item-top">
+						<a href="shirt1"><img src="images/shirt-image1.png" alt="shirt" /></a>
+						<div><h3>Azure Diamond</h3></div>
+						<div><p>$39.99</p></div>
+					</div>
+					<div class="grid-item-top">
+						<a href="shirt2"><img src="images/shirt-image2.png" alt="shirt" /></a>
+						<div><h3>Chillaxin Casual</h3></div>
+						<div><p>$39.99</p></div>
+					</div>
+					<div class="grid-item-top">
+						<a href="shirt3"><img src="images/shirt-image3.png" alt="shirt" /></a>
+						<div><h3>Speckled Dolomite</h3></div>
+						<div><p>$39.99</p></div>
+					</div>
+					<div class="grid-item-top">
+						<a href="shirt4"><img src="images/shirt-image4.png" alt="shirt" /></a>
+						<div><h3>Summer Lightwear</h3></div>
+						<div><p>$39.99</p></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		-->
+		<div class="section">
+			<div id="featured-collection">
+				<h2>Featured Collection</h2>
+				<div class="grid-container">
+					<div class="grid-item-top"><a href="shirt1"><img src="images/shirt-image1.png" alt="shirt" /></a></div>
+					<div class="grid-item-top"><a href="shirt2"><img src="images/shirt-image2.png" alt="shirt" /></a></div>
+					<div class="grid-item-top"><a href="shirt3"><img src="images/shirt-image3.png" alt="shirt" /></a></div>
+					<div class="grid-item-top"><a href="shirt4"><img src="images/shirt-image4.png" alt="shirt" /></a></div>
+					<div class="grid-item-middle"><h3>Azure Diamond</h3></div>
+					<div class="grid-item-middle"><h3>Chillaxin Casual</h3></div>
+					<div class="grid-item-middle"><h3>Speckled Dolomite</h3></div>
+					<div class="grid-item-middle"><h3>Summer Lightwear</h3></div>
+					<div class="grid-item-bottom"><p>$39.99</p></div>
+					<div class="grid-item-bottom"><p>$39.99</p></div>
+					<div class="grid-item-bottom"><p>$39.99</p></div>
+					<div class="grid-item-bottom"><p>$39.99</p></div>
+				</div>
+			</div>
+		</div>
+		
+
+		
+		<!-- Image Bar -->
+		<div>
+			<div id="image-bar">
+				<div id="img-bar-1" class="image-bar-item"></div><div id="img-bar-2" class="image-bar-item"></div>
+			</div>
+		</div>
+		
+		<!-- Reviews Section -->
+		<div class="section">
+			<div id="reviews">
+				<h2>Testimonials</h2>
+				<div id="reviewsContainer">
+					<div id="node1" class="node"></div>
+					<div id="node2" class="node"></div>
+					<div id="node3" class="node"></div>
+				</div>
+			</div>
+		</div>
+		<!-- Script for Reviews section  -->
+		<script src="script.js"></script>
+		
+		<!-- Footer  -->
+		<div class="section">
+			<div id="footer">
+				
+				<!-- Footer Menu  -->
+				<div class="column-half-left">
+					<div id="footer-menu">
+						<ul class="footer-menu">
+							<li><a href="#Refunds">REFUNDS</a></li>
+							<li><a href="#Returns">RETURNS</a></li>
+							<li><a href="#Orders">TRACK YOUR ORDER</a></li>
+							<li><a href="#Fish">FRIED FISH FRIDAYS</a></li>
+						</ul>
+					</div>
+				</div>
+					<!-- Newsletter Signup  -->
+				<div class="column-half-right">
+					<div id="newsletter-container">
+						<div id="newsletter-signup">
+							<form action="#">
+								<p>Sign up for our Newsletter, will ya?</p>
+								<input id="email-form" type="email" name="email" placeholder="Email Address" />
+								<input id="submit" type="submit" value="submit" />
+							</form>
+						</div>
+					</div>
+				</div>
+					
+			</div>
+		</div>
+		
+	</div>
+		
+	
+</body>
+</html>
